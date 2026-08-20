@@ -65,12 +65,12 @@ function OrdenaAlfabeticamente(array) {
     });
 }   
 
-let telefone = new TelefoneCelular(11, 999999999);
-let endereco = new Endereco("Rua das Flores", 123, "São Paulo", "SP");
-let cliente = new Cliente("João Silva Sauro", telefone, "joao.silva@silva", endereco);
+let telefone = new TelefoneCelular(12, 666666666);
+let endereco = new Endereco("Rua das Flores", 666, "São Paulo", "SP");
+let cliente = new Cliente("João Silva Sauro", telefone, "joao.silva@sauro", endereco);
  // segunda pessoa 
 let telefone2 = new TelefoneCelular(21, 888888888);
-let endereco2 = new Endereco("Rua Palmeiras", 456, "São Paulo", "SP");
+let endereco2 = new Endereco("Rua Palmeiras", 333, "São Paulo", "SP");
 let cliente2 = new Cliente("Maria Oliveira", telefone2, "maria.oliveira@oliveira", endereco2    );
 // terceira pessoa
 let telefone3 = new TelefoneCelular(31, 777777777);
