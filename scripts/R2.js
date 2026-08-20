@@ -74,7 +74,7 @@ let endereco2 = new Endereco("Rua Palmeiras", 333, "São Paulo", "SP");
 let cliente2 = new Cliente("Maria Oliveira", telefone2, "maria.oliveira@oliveira", endereco2    );
 // terceira pessoa
 let telefone3 = new TelefoneCelular(31, 777777777);
-let endereco3 = new Endereco("Rua das Acácias", 789, "São Paulo", "SP");
+let endereco3 = new Endereco("Rua das Acácias", 789, "São Paulo", "sp");
 let cliente3 = new Cliente("Carlos Souza", telefone3, "carlos.souza@souza", endereco3);
 
 let clientes = [cliente, cliente2, cliente3];
@@ -85,10 +85,15 @@ ordenar.forEach(function(c) {
     console.log("Nome: " + c.getNome());
 });
     
-console.log("Nome do cliente: " + cliente.getNome());
-console.log("Telefone do cliente: (" + cliente.getTelefoneCelular().getDdd() + ") " + cliente.getTelefoneCelular().getNumero());
-console.log("Email do cliente: " + cliente.getEmail()); 
-console.log("Email do cliente (minúsculo): " + cliente.getEmailMinusculo());
-console.log("Email do cliente (maiúsculo): " + cliente.getEmailMaiusculo());
-console.log("Endereço do cliente: " + cliente.getEndereco().getRua() + ", " + cliente.getEndereco().getNumero() + ", " + cliente.getEndereco().getCidade() + ", " + cliente.getEndereco().getEstado());
+ordenar.forEach(function(c) {
+    console.log("-----------------------------------------");
+    console.log("Nome do cliente: " + c.getNome());
+    console.log("Telefone do cliente: (" + c.getTelefoneCelular().getDdd() + ") " + c.getTelefoneCelular().getNumero());
+    console.log("Email do cliente: " + c.getEmail()); 
+    console.log("Email (minúsculo): " + c.getEmailMinusculo());
+    console.log("Email (maiúsculo): " + c.getEmailMaiusculo());
+    console.log("Endereço: " + c.getEndereco().getRua() + ", " + c.getEndereco().getNumero() + ", " + c.getEndereco().getCidade() + ", " + c.getEndereco().getEstado());
+    console.log("Estado (minúsculo): " + c.getEndereco().getEstadoMinusculo());
+    console.log("Estado (maiúsculo): " + c.getEndereco().getEstadoMaiusculo());
+});
 
