@@ -1,4 +1,4 @@
-# R2-Tecnicas-de-Programacao 💻
+# RI2-Tecnicas-de-Programacao 💻
 _____________________________________
 
 ## Construindo objetos 🛠️
